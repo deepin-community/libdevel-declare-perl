@@ -1,0 +1,282 @@
+libdevel-declare-perl (0.006022-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:44:42 +0800
+
+libdevel-declare-perl (0.006022-1) unstable; urgency=medium
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Import upstream version 0.006022.
+  * Update debian/upstream/metadata.
+  * Update years of upstream and packaging copyright.
+  * Add information about new third-party file to debian/copyright.
+  * Update Upstream-Contact in debian/copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 29 Apr 2020 20:26:24 +0200
+
+libdevel-declare-perl (0.006019-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Angel Abad ]
+  * Import upstream version 0.006019
+  * debian/copyright: Update debian copyright
+  * Bump Standards-Version to 4.1.0 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Thu, 07 Sep 2017 17:48:02 +0200
+
+libdevel-declare-perl (0.006018-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ intrigeri ]
+  * Enable all hardening build flags.
+  * Declare compliance with Standards-Version 3.9.8.
+
+ -- intrigeri <intrigeri@debian.org>  Tue, 05 Jul 2016 20:45:36 +0000
+
+libdevel-declare-perl (0.006018-1) unstable; urgency=medium
+
+  * Import upstream version 0.006018
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 09 May 2015 23:43:01 +0200
+
+libdevel-declare-perl (0.006017-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata
+  * Imported upstream version 0.006017
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 08 Oct 2014 22:24:08 +0200
+
+libdevel-declare-perl (0.006016-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Strip trailing slash from metacpan URLs.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 07 Apr 2014 20:34:21 +0200
+
+libdevel-declare-perl (0.006015-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.006015
+  * debian/copyright: Update debian/* years
+  * Bump Standards-Version to 3.9.5 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Mon, 03 Feb 2014 13:48:42 +0100
+
+libdevel-declare-perl (0.006014-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update years of packaging copyright, dropped info about removed files.
+  * Use debhelper 9.20120312 to get all hardening flags.
+  * Add build dependency on libtest-requires-perl.
+  * Declare compliance with Debian Policy 3.9.4.
+  * debian/rules: remove sparc alignment workaround. This was only needed
+    for perl << 5.10.1. Removing it also gives us all hardening flags
+    back.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 22 Sep 2013 17:45:48 +0200
+
+libdevel-declare-perl (0.006011-1) unstable; urgency=low
+
+  * Imported Upstream version 0.006011
+  * Bump Debhelper compat level 9
+  * Update debian/copyright format as in Debian Policy 3.9.3
+  * Bump Standards-Version to 3.9.3
+
+ -- Angel Abad <angel@debian.org>  Thu, 23 Feb 2012 14:36:27 +0100
+
+libdevel-declare-perl (0.006010-1) unstable; urgency=low
+
+  * Imported Upstream version 0.006010
+
+ -- Angel Abad <angel@debian.org>  Wed, 08 Feb 2012 18:19:26 +0100
+
+libdevel-declare-perl (0.006009-1) unstable; urgency=low
+
+  * mass updated Angel Abad's email address
+  * Imported Upstream version 0.006009
+  * debian/copyright: Update debian years
+
+ -- Angel Abad <angel@debian.org>  Thu, 02 Feb 2012 09:50:06 +0100
+
+libdevel-declare-perl (0.006008-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Remove debian/source/local-options; abort-on-upstream-changes and
+    unapply-patches are default in dpkg-source since 1.16.1.
+
+  [ Angel Abad ]
+  * Imported Upstream version 0.006008
+  * debian/control: Build-Depends on libextutils-depends-perl (>= 0.302)
+
+ -- Angel Abad <angelabad@gmail.com>  Sun, 06 Nov 2011 22:19:38 +0100
+
+libdevel-declare-perl (0.006007-1) unstable; urgency=low
+
+  [ Angel Abad ]
+  * Imported Upstream version 0.006007
+  * debian/control: Add myself to Uploaders
+  * debian/copyright:
+    - Update debian/* section
+    - Update inc/Module/* section
+
+  [ gregor herrmann ]
+  * Make (build) dependency on libb-hooks-op-check-perl versioned.
+
+ -- Angel Abad <angelabad@gmail.com>  Tue, 13 Sep 2011 12:54:57 +0200
+
+libdevel-declare-perl (0.006006-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 27 Aug 2011 18:11:00 +0200
+
+libdevel-declare-perl (0.006005-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add build-dep on libtest-warn-perl.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Fri, 08 Jul 2011 23:50:54 +0200
+
+libdevel-declare-perl (0.006004-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ansgar Burchardt <ansgar@debian.org>  Sat, 14 May 2011 15:50:30 +0200
+
+libdevel-declare-perl (0.006003-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release 0.006001
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+
+  [ gregor herrmann ]
+  * New upstream release 0.006003.
+  * Switch to source format 3.0 (quilt).
+  * debian/copyright: update license stanzas.
+  * Add /me to Uploaders.
+  * Bump debhelper compatibility level to 8.
+  * Set Standards-Version to 3.9.2 (no further changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 23 Apr 2011 19:11:26 +0200
+
+libdevel-declare-perl (0.006000-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Standards-Version 3.8.4 (no changes)
+  * Drop unnecessary version dependencies
+
+  [ Ryan Niebur ]
+  * Update ryan52's email address
+
+  [ gregor herrmann ]
+  * Drop use-old-test-simple.patch now that #541342 is fixed, build depend on
+    "perl (>= 5.10.1) | libtest-simple-perl (>= 0.88)". Drop quilt framework.
+
+  [ Franck Joncourt ]
+  * Refreshed d.copyright to follow DEP5 guideline.
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Tue, 09 Mar 2010 16:22:36 -0500
+
+libdevel-declare-perl (0.005011-2) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Update jawnsy's email address
+
+  [ Damyan Ivanov ]
+  * rules: build with -O1 on sparc and Perl before 5.10.1; fixes alignment
+    error (triggerred during tests)
+    Closes: 543573; Thanks to Niko Tyni for investigation and fix proposal
+    + bump debhelper build-dependency to guarantee support for overrides
+  * add myself to Uploaders
+
+ -- Damyan Ivanov <dmn@debian.org>  Wed, 02 Sep 2009 23:24:35 +0300
+
+libdevel-declare-perl (0.005011-1) unstable; urgency=low
+
+  * New upstream release
+  * Add patch to use old version of Test::More to work around #541342
+    + new patch: use-old-test-simple.patch
+    + add quilt framework and README.source
+  * debian/control: make build-dep on perl unversioned (version in oldstable
+    is recent enough)
+  * Bump Standards-Version to 3.8.3
+  * Add myself to Uploaders
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Tue, 18 Aug 2009 19:11:01 +0200
+
+libdevel-declare-perl (0.005010-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+    + Conditionally expands linestrings under Perl's debugger
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * New upstream release
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Tue, 11 Aug 2009 16:49:10 -0700
+
+libdevel-declare-perl (0.005003-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #529234)
+
+ -- Jonathan Yu <frequency@cpan.org>  Sun, 24 May 2009 12:01:04 -0400

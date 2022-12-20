@@ -1,0 +1,41 @@
+Source: libdevel-declare-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>,
+           Damyan Ivanov <dmn@debian.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Angel Abad <angel@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libb-hooks-endofscope-perl <!nocheck>,
+               libb-hooks-op-check-perl,
+               libextutils-depends-perl,
+               libsub-name-perl <!nocheck>,
+               libtest-requires-perl <!nocheck>,
+               libtest-warn-perl <!nocheck>,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libdevel-declare-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libdevel-declare-perl.git
+Homepage: https://metacpan.org/release/Devel-Declare
+Rules-Requires-Root: no
+
+Package: libdevel-declare-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends},
+         libb-hooks-endofscope-perl,
+         libb-hooks-op-check-perl,
+         libsub-name-perl
+Description: module to add new syntax to Perl
+ Devel::Declare can install subroutines called declarators which locally take
+ over control of Perl's parser, allowing the creation of new syntax, including
+ keywords and other constructs that might not be, in themselves, valid Perl 5
+ code.
+ .
+ This module can be used for adding new keywords, completely in Perl code. It
+ allows a subroutine to be executed during the Perl code compilation, meaning
+ that syntax can be transformed into equivalent code for Perl on-the-fly.
